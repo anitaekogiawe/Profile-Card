@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
+</head>
+<body>
+   <article data-testid="test-profile-card">
+
+    <div class="profile-container">
+
+      <!-- Avatar -->
+
+        <figure>
+
+            <img src="images/woman.png"alt="User Avatar" data-testid="test-user-avatar" />
+
+        </figure>
+
+      <!-- User Info -->
+
+        <div class="profile-details">
+
+            <h2 data-testid="test-user-name" aria-label="User Name">
+                Anita Ekogiawe
+            </h2>
+
+            <p data-testid="test-user-bio">
+
+                Frontend Developer | Tech Enthusiast | Lifelong Learner 🌍
+
+            </p>
+
+            <time data-testid="test-user-time"></time>
+
+            <!-- Social Links -->
+            <nav data-testid="test-user-social-links" aria-label="Social Links">
+
+                <a 
+                    href="https://twiter.com"  target="_blank"
+                    rel="noopener noreferrer" data-testid="test-user-social-twitter">
+                    Twitter
+                </a>
+
+                <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin">
+                    
+                    Linkedin
+                </a>
+
+                <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin">
+                    Facebook
+                </a>
+
+                <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-github">
+                    Github
+                    
+                </a>
+
+            </nav>
+            
+
+            <!-- Hobbies -->
+
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Traveling</li>
+                    <li>Music</li>
+                    <li>Reading</li>
+                </ul>
+            </section>
+
+            <!-- Dislikes -->
+
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Procrastination</li>
+                    <li>Dishonesty</li>
+                    <li>Spam Emails</li>
+                </ul>
+
+            </section>
+
+            
+
+        </div>
+
+    </div>
+
+  </article>
+
+    
+  <script src="script.js"></script>
+</body> 
+</html>
