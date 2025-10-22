@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <h2>Contact Us</h2>
+        </header>
+        <form action="#" id="contact-form">
+            <div>
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="name" type="text"
+                data-testid="test-contact-name"
+                aria-describedby="test-contact-error-name"
+                required />
+                <span id="test-contact-error-name"
+                    data-testid="test-contact-error-name"
+                    class="error"
+                    aria-live="polite"
+                    hidden>
+                </span>
+            </div>
+
+            <div>
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email"
+                data-testid="test-contact-email"
+                aria-describedby="test-contact-error-email"
+                required />
+                <span id="test-contact-error-email"
+                    data-testid="test-contact-error-email"
+                    class="error"
+                    aria-live="polite"
+                    hidden>
+                </span>
+            </div>
+
+            <div>
+                <label for="contact-subject">Subject</label>
+                <input id="contact-subject" name="subject" type="text"
+                data-testid="test-contact-subject"
+                aria-describedby="test-contact-error-subject"
+                required />
+                <span id="test-contact-error-subject"
+                    data-testid="test-contact-error-subject"
+                    class="error"
+                    aria-live="polite"
+                    hidden>
+                </span>
+            </div>
+
+            <div>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message"
+                data-testid="test-contact-message"
+                aria-describedby="test-contact-error-message"
+                minlength="10"
+                required></textarea>
+                <span id="test-contact-error-message"
+                    data-testid="test-contact-error-message"
+                    class="error"
+                    aria-live="polite"
+                    hidden>
+                </span>
+            </div>
+
+            <div class="actions">
+                <button type="submit" data-testid="test-contact-submit">Send message</button>
+            </div>
+
+            <div id="contact-success"
+                data-testid="test-contact-success"
+                class="success"
+                role="status"
+                aria-live="polite"
+                hidden>
+                Thanks — your message was sent successfully.
+            </div>
+        </form>
+
+    </div>    
+
+<script src="script1.js"></script>
+</body>
+</html>
