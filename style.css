@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
     padding: 1rem;
 }
@@ -167,7 +168,28 @@ li:hover {
 
    
 }
+.new-nav {
+  width: 100%;
+  /* background-color: #3a4452; */
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+    margin-bottom: 2rem;
+}
 
+.new-nav a {
+   text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 1.5rem;
+    transition: color 0.3s;
+}
+.new-nav a:hover {
+    color: #f4978e;
+}
 
 
 
